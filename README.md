@@ -10,8 +10,6 @@ Access the app by clicking on the netlify deployment link provided above.
 
 Research/portfolio prototype using synthetic data. It is *not* synchronized with a physical factory, is *not* a live production digital twin, and is *not* GMP/GxP validated. Predictions and recommendations must not be used for product quality, batch release, plant operation, or safety-critical decisions.
 
-![Factory floor — PharmaOps Twin Pro](screenshots/PharmaOps_v4_Factory.png)
-
 ### What makes it a digital twin *prototype*?
 
 The application has a virtual process model, identifiable manufacturing resources, a simulated plant clock, traceable equipment events, and decisions that change the modeled state. Its factory representation is **2D SVG, not 3D**; 3D visualization is not required for digital-twin research. What is missing for a true *connected* operational digital twin is ongoing synchronization with an identified physical plant (for example, via MES, SCADA, PLCs, and historians). All operating and sensor data shown here are synthetic.
