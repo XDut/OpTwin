@@ -1,4 +1,4 @@
-# PharmaOps - Pharma Manufacturing Digital Twin Prototype
+# OpTwin - Browser-based Pharma Manufacturing Digital Twin Prototype
 
 PharmaOps is a browser-based **digital twin prototype** for a fictional oral solid dosage (OSD) facility. It combines event-driven manufacturing simulation, constraint-aware production scheduling, material-handling optimization, predictive maintenance, explainable machine learning, reinforcement learning, and engineering economics in an interactive factory model.
 
