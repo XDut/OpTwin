@@ -1,0 +1,39 @@
+ENGINEERING ARCHITECTURE
+
+Single document (standalone HTML)
+  |-- Embedded HTML/CSS/SVG: pharmaceutical factory / tabs / equipment panels
+  |-- browser_engine.js: event queue, machines, batch route, Dijkstra routing,
+  |                     simulated transport, local-search scheduling,
+  |                     Monte Carlo trials, financial accounting
+  |-- advanced_engine.js: synthetic sensor histories and asset holdout,
+  |                       browser-native RF/GBDT/MLP/logistic models,
+  |                       12-hour vibration/temperature trend feature extraction,
+  |                       fixed-reference Shapley explainer, clipped PPO,
+  |                       material dispatch actions and validation metrics
+  |-- app_live.js: live scenario execution, KPI and trace rendering,
+  |                routing policy selection, exports
+  |-- advanced_ui.js: equipment condition panel, CSV data import, ML charts,
+  |                   local/global attribution, PPO bench, comparative metrics
+  |-- No external network fetch, CDN script or server process
+
+Operational decision loop:
+ synthetic assumptions -> batch schedule optimization -> process event simulator
+ -> tugger dispatch (heuristic or PPO) -> batch completion -> cost and risk KPIs
+ -> new management scenario -> recompute
+
+AI decision loop:
+ synthetic equipment histories -> grouped asset holdout -> train four model
+ families -> forecast failure 24h and remaining useful life -> fixed-reference
+ attribution -> display maintenance REVIEW flags (not automatic machine action)
+
+Preliminary technology classification:
+ A simulation-connected, AI-assisted industrial digital twin demonstrator with
+ autonomous simulated material dispatch. NOT a live synchronized digital twin.
+ PPO controls the policy inside a synthetic environment only.
+
+Deployment distinction:
+ A multithreaded OR-Tools WASM build requires cross-origin isolation HTTP
+ headers; these cannot be produced from file://. Pyodide plus Python wheels
+ requires a separate compatible WASM distribution and packaging. For genuine
+ Python-based algorithms use a managed desktop/local server application or
+ separately hosted web app; neither is necessary for the browser-native file.
