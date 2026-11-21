@@ -1,0 +1,4 @@
+*.html linguist-documentation
+*.py linguist-detectable
+*.js linguist-detectable
+*.css linguist-detectable
